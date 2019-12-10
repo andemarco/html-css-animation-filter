@@ -149,5 +149,115 @@
   }
 }
 .ex-10-icon:hover {
-  animation: rotate 1s infinite;
+  animation: rotate 1s linear infinite;
+}
+
+/* ESERCIZIO 11 */
+@keyframes lessrotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  70% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+.ex-11-icon:hover {
+  animation: lessrotate 2s linear infinite;
+}
+
+/* ESERCIZIO 12 */
+@keyframes firstwhitesx {
+  0% {
+    left: 10%;
+  }
+  50% {
+    left: calc(100% - 50px);
+  }
+  100% {
+    left: 10%;
+  }
+}
+.ex-12-button:hover .ex-12-top-white {
+  animation: firstwhitesx 2s linear;
+}
+
+@keyframes firstwhiterx {
+  0% {
+    right: 10%;
+  }
+  50% {
+    right: calc(100% - 50px);
+  }
+  100% {
+    right: 10%;
+  }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+  animation: firstwhiterx 2s linear;
+}
+
+/* ESERCIZIO 13 */
+@keyframes secondtwhitesx {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 15px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 15px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-top-white {
+  animation: secondtwhitesx 2s linear;
+}
+
+@keyframes secondwhiterx {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 15px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 15px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: secondwhiterx 2s linear;
 }
